@@ -1,5 +1,5 @@
 import { Input } from "./Input"
-import { Label } from "../label"
+import { Label } from "../Label"
 
 export function LabeledInput({ description = "", type = "text", name, placeholder, value, onChange, toUppercase = true, labelWeight="font-bold", ...props }) {
 
