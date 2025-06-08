@@ -1,5 +1,5 @@
 import { Select } from "./Select"
-import { Label } from "../label"
+import { Label } from "../Label"
 
 export function LabeledSelect({ description = "", options, toUppercase = true, labelWeight = "font-bold", ...props }) {
 
