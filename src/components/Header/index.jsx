@@ -1,5 +1,5 @@
-import { Header } from "./header";
-import { SubHeader } from "./subHeader";
+import { Header } from "./Header";
+import { SubHeader } from "./SubHeader";
 
 export {
     Header,
