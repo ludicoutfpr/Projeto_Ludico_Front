@@ -1,5 +1,5 @@
-import { TextButton } from "./textButton";
-import { PrimaryButton } from "./primaryButton";
+import { TextButton } from "./TextButton";
+import { PrimaryButton } from "./PrimaryButton";
 
 export {
     TextButton,
