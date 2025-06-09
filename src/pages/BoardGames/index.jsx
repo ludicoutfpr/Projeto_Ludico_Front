@@ -173,8 +173,8 @@ export function BoardGames() {
       if(response.status === 201) {
         console.log("Board Game added successfully");
         getBoardGames();
-        cleanInputs();
         setIsCreating(false);
+        cleanInputs();
       }else {
         console.error("Failed to add scape:", response.data);
         setAddBoardGameError(true);

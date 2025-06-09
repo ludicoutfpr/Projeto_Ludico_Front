@@ -166,9 +166,10 @@ export function Scape() {
         }
       })
       if (response.status === 200) {
-        console.log("Scape updated successfully");
-        cleanInputs();
         getScapes();
+        console.log("Scape updated successfully");
+        setIsEditing(false);
+        cleanInputs();
       } else {
         console.error("Failed to update scape:", response.data);
         setAddScapeError(true);
@@ -239,7 +240,7 @@ export function Scape() {
               <div className="flex justify-center">
                 <PrimaryButton
                   className="w-fit text-2xl font-bold px-8 mt-6"
-                  onClick={() => handleAddScape(item._id)}
+                  onClick={handleAddScape}
                   text="Cadastrar Scape"
                   fullWidth={false}
                 />
